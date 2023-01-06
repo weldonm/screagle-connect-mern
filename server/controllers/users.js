@@ -1,6 +1,6 @@
 import User from '../models/User.js'
 
-/* READ */
+// Read
 export const getUser = async (req, res) => {
   try {
     const { id } = req.params
@@ -38,7 +38,7 @@ export const getUsersFriends = async (req, res) => {
   }
 }
 
-/* UPDATE */
+// Update
 export const addRemoveFriend = async (req, res) => {
   try {
     const { id, friendId } = req.params
